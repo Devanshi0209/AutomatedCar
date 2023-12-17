@@ -1,0 +1,78 @@
+spawn_point=carla.Transform(carla.Location(x=-7.530000, y=158.979996, z=0.500000), carla.Rotation(pitch=0.000000, yaw=89.999954, roll=0.000000))
+spawn_point=carla.Transform(carla.Location(x=193.779999, y=266.429993, z=0.500000), carla.Rotation(pitch=0.000000, yaw=-89.999817, roll=0.000000))
+
+	if (steervalue>0.18 and steervalue<0.27) or (steervalue<-0.18 and steervalue>-0.29):
+
+		ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=steervalue))
+		if steervalue>0.23:
+			ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.495))
+		if steervalue<-0.23:
+			ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=-0.495))
+	elif steervalue>0.4:
+		ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.495))
+	elif steervalue<-0.4:
+		ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=-0.495))
+
+		#ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.0))
+	else:
+		ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.0))
+
+
+
+spawn_point=carla.Transform(carla.Location(x=111.080017, y=306.419983, z=0.500000), carla.Rotation(pitch=0.000000, yaw=-0.000183, roll=0.000000))
+	if steervalue>=0.2 or steervalue<=-0.09:
+		if steervalue<0.30:
+			ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=steervalue))
+		else:
+			ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=-0.034))
+		print(steervalue)
+	else:
+		ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.0))
+
+
+
+
+spawn_point=carla.Transform(carla.Location(x=-7.530000, y=270.729980, z=0.500000), carla.Rotation(pitch=0.000000, yaw=89.999954, roll=0.000000))
+
+if (steervalue>0.14 and steervalue<0.27) or (steervalue<-0.14 and steervalue>-0.29):
+
+		ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=steervalue))
+		if steervalue>0.23:
+			ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.495))
+			#ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.0))
+		if steervalue<-0.23:
+			ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=-0.295))
+			#ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.0))
+	elif steervalue>0.4:
+		ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.495))
+	elif steervalue<-0.4:
+		ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=-0.295))
+
+		#ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.0))
+	else:
+		ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.0))
+
+
+
+
+
+
+spawn_point=carla.Transform(carla.Location(x=18.250019, y=191.769989, z=0.500000), carla.Rotation(pitch=0.000000, yaw=-0.000183, roll=0.000000))
+	if (steervalue>0.1 and steervalue<0.27) or (steervalue<-0.1 and steervalue>-0.29):
+
+		ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=steervalue))
+
+		if steervalue>0.23:
+			ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.595))
+			#ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.0))
+		if steervalue<-0.23:
+			ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=-0.595))
+			#ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.0))
+	elif steervalue>0.4:
+		ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.595))
+	elif steervalue<-0.4:
+		ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=-0.595))
+
+		#ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.0))
+	else:
+		ourvehicle.apply_control(carla.VehicleControl(throttle=throttlevalue,steer=0.0))
